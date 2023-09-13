@@ -26,4 +26,5 @@ print("hello \tPython");
 # 2) 정수형: 3,0,-1
 # 3) 실수형: 3.14,0.0,-2.2
 # 4) 논리형: true,False
-
+# 예) JAVA 정수형: byte,short,int,long
+#   python 정수형: int
