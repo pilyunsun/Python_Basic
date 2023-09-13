@@ -8,13 +8,22 @@ print("hello world")
 
  # 문자열 타입(string Type)
 # - python: '',"" ->string
-<<<<<<< HEAD
+
 # - c,java:''(char),""(string)
 # -문번: \(역슬러시) + @
 # - 문자열 내의 일부 문자의 의미를 달리하여 특정한 효과 주기
 # - 예) \n: 한 줄 개행, \t:탭 (8칸 공백)
 print("hello \nPython");
 print("hello \tPython");
-=======
-# - c,java:''(char),""(string)
->>>>>>> origin/main
+
+#공부 tip)
+# - 몇 버전부터 ~ 나온 기술(신기술) -> 신기술 공부, 구기술 공부 x
+
+# 자료형(type)
+# - python의 모든 자료형은 객체
+# - c,java언어 문자형: 'A','E'
+# 1) 문자열: "hello","hi"
+# 2) 정수형: 3,0,-1
+# 3) 실수형: 3.14,0.0,-2.2
+# 4) 논리형: true,False
+
