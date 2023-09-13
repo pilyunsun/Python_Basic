@@ -3,10 +3,9 @@
 # 출력 함수(print)
  # - ()안의 갑을 출력
  # - 변수 값 확인 용도 또는 메세지 출력 용도
-print("Hello Python")
 print("=" * 200)
+print("Hello Python")
 
-print("hello world")
 
  # 문자열 타입(string Type)
 # - python: '',"" ->string
@@ -41,6 +40,8 @@ print("hello \tPython");
 
 # python 동적 타이핑 언어 -> python 실행 될 떄 type을 지정!
 # type() 함수: ()안의 값의 type을 확인할때 사용
+
+print("=" * 200)
 print(type("ABC"))
 print(type(123))
 
@@ -49,3 +50,60 @@ print(type(123))
 # 1) int(): 자료형으로 변환
 # 2) float(): 실수형으로 변환
 # 3) str(): 문자열형으로 변환
+print("=" * 200)
+
+# Type Casting 실습
+int_a = 3
+float_b = 3.14
+str_c = "9.2"
+str_int_c = "9"
+str_float_d = "9.2"
+# 1) 문자열 정수형("9") -> 정수형(9)
+print(int(str_int_c))
+# 2) 문자열 정수형("9") -> 실수형(9.0)
+print(float(str_int_c))
+# 3) 문자열 실수형("9.2") -> 정수형 오류
+#print(int(str_float_d))
+# 4) 문자열 실수형("3.14") -> 실수형
+print(float(str_float_d))
+# 5) 정수형 -> 실수형
+print(float(str_float_d))
+# 6) 정수형 -> 문자열
+print(str(int_a))
+# 7) 실수형 -> 정수형
+print(int(float_b))
+# 8) 실수형 -> 문자열
+print(str(float_b))
+# * float("Hello"), int("Hello") 형 변환 불가!
+
+# None
+#   - 아무런 값을 갖지 않을 떄 사용
+#   - 일반적으로 변수가 초기값을 갖지 않게 변수만 생성하고 싶을 때 사용
+#   - 기타 언어의 Null과 같은 의미로 사용!
+#   예) student_name
+print("=" * 200)
+student_name = None # 적극 권장 X (절대 사용 금지)
+student_name = ""   # 적극 권장
+# 이유? "Null pointer Exception" Error 개발자 공포의 대상!!
+
+# 기본자료형(Primetive) : 변수에 값이 저장
+#   - int num = 4;
+# 객체자료형(Reference Type) : 변수에 값의 "주소"가 저장
+#   - String name = "10";
+# * Java: 기본, 객체 모두 사용
+# * python: 객체만 사용
+
+# C언어 변수 생성 -> int b; (변수 생성, 값 X)
+# python 변수 생성 -> b (변수 호출)
+
+# 변수(Variable)
+#   - 변수: 하나의 값을 저장할 수 있는 메모리 공간
+print("=" * 200)
+num = 4
+num = 10
+print(num) # 출력: 10
+
+# - 변수 생성 및 초기화
+# num = 5; # 문법
+# 대입연산자(=) : 우측의 값을 좌측에 저장
+# 동등연산자(==) : Equal
