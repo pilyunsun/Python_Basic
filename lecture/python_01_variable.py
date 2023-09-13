@@ -8,9 +8,13 @@ print("hello world")
 
  # 문자열 타입(string Type)
 # - python: '',"" ->string
+<<<<<<< HEAD
 # - c,java:''(char),""(string)
 # -문번: \(역슬러시) + @
 # - 문자열 내의 일부 문자의 의미를 달리하여 특정한 효과 주기
 # - 예) \n: 한 줄 개행, \t:탭 (8칸 공백)
 print("hello \nPython");
 print("hello \tPython");
+=======
+# - c,java:''(char),""(string)
+>>>>>>> origin/main
