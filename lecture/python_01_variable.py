@@ -107,3 +107,87 @@ print(num) # 출력: 10
 # num = 5; # 문법
 # 대입연산자(=) : 우측의 값을 좌측에 저장
 # 동등연산자(==) : Equal
+
+# name 변수 생성
+# "pilyun seon" 값을 name 변수에 담기
+
+#name(변수명) = (대입연산자), "pilyunseon"(값)
+name = "pilyunseon"
+
+# 명령규칙(Naming Rule)
+# - * 변수, 함수, 클래스 등의 사용자 정의 이름을 붙일 떄 사용!
+#   * 명확하고 알아보기 쉽게 짓기!
+#
+#   1.영문 대소문자, 숫자, 특수문자(_)만 사용
+#   2.숫자로 시작할 수 없음
+#   abc1(0), 1abc(x)
+#   3.영어 대소문자 구별
+#   abc Abc aBc abC 모두 다른 변수
+#   4.예악어 사용 불가
+#   예약어: 파이선에서 미리 선점하여 사용중인 키워드
+#           ex) print, for, while, if, 등등
+# Naming Method
+#   - 변수, 함수, 클래스 등의 사용자 정의 이름에 사용하는 기법
+#   - 프로그래밍 언어별로 사용하는 Naming Method가 다름!
+# 시험....
+#   1.snake_case: 소문자만 사용, 합성어는 (_)사용
+#   ex) student_name
+#   2.camelCase: 첫글자 소문자, 합성어 첫글자 대문자
+#   ex) studentName
+#   3.PascalCase: 첫글자 대문자, 합성어 첫글자 대문자
+#   ex) StudentName
+#                       변수                      함수                               클래스
+# java, c              camelCase                camelCase                       pascalCase
+# python               snake_case               snake_case                      pascalCase
+
+# formet(동적) 출력!
+print("=" * 200)
+student_num = 20233097
+student_name = "pilyunseon"
+# 출력 예: "조선대학교 20233097,pilyunseon 입니다"
+print("조선대학교 20233097,pilyunseon 입니다") # 하드 코딩 지양!
+
+# 1.format() 함수 - old
+print("조선대학교 {},{} 입니다". format(student_num,student_name))
+
+# 2.f-string - New
+print(f"조선대학교 {student_num},{student_name} 입니다")
+
+# 간단한 사칙연산
+# + : 더하기
+# - : 빼기
+# * : 곱하기
+# / : 나누기
+# //: 나누기 (몫)
+# % : 나머지
+# **: 제곱
+# *^
+
+# 4/2 : 나누기         2.5
+# 5//2 : 나누기(몫)    2
+# 5%2 : 나누기(나머지) 1
+
+# 문제?
+num = 9
+num -1
+num +2
+print(num)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
