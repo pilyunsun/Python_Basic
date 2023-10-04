@@ -23,13 +23,16 @@
 # range(2, 5, 2) => 2, 4, (2에서 2씩 + 5이하)
 
 # 1~9까지 출력하는 for문
+# range()를 활용하여 1~9까지 출력한는 함수
 for i in range(1, 10):
     print(i)
 
+# List를 활용한 for문
 temp = ["A", "B", "C", "D", "E", "F", "G", "I", "J"]
 for alpha in temp:
     print(alpha)
 
+# *enumerate() 함수
 # 반복횟수(index) 출력하고 싶은 경우!
 # - enumerate()
 for alpha in enumerate(temp):
@@ -42,16 +45,10 @@ print("="*100)
 # ...
 # 2X9 = 18
 
-# # input() 활용해서 사용자가 입력한 값(2~9) => 해당 단 출력
-# dan = int(input("단수: "))
-# for i in range(1,10):
-#     print(f"{dan}x{i} = {dan*i}")
+
 
 print("="*100)
-# 2단 9단까지 출력 => 중첩for
-for i in range(2,10):
-    for j in range(1,10):
-        print(f"{i}x{j} = {i*j}")
+
 
 
 # dict를 사용한 for문
