@@ -50,14 +50,25 @@ while True:
             print("MSG: 입고 불가,다른 곳으로 가..")
     elif select_num == 2: # 출고
         # 1.차량번호
+        car_num = input(">>출고: ")    
         # 2.주차타워 check 차량번호
-        # 2-1. x: 차 없음...
-        # 2-2. 출고(tower 값 => ""),
+        if car_num in tower:
+            for car in enumerate(tower):
+                if car==car_num: #출고
+                    tower[i] = ""#타워에서 차량제거
+                    car_cnt -= 1 # 현재 주차대수 동기화
+                    break
+        else:
+            print("MSG: 해당 번호로 입고 된 차량이 없습니다.")
+        # 2-1. 있으면 -> 출고(tower 해당 차량 제거, car_cnt_-1)
+        # 2-2. 없으면 -> "입고 된 차량 x"
         pass
     elif select_num == 3: # 조회
-        pass
+        for i in range(len(tower)-1, -1, -1):
+            print(f">{i+1}층 {tower[i]}")
     elif select_num == 4: # 종료
-        print("MSG: 프로그램을 종료합니다")
+        print("MSG: 프로그램을 종료합니다.")
+        exit()
 
 
 
