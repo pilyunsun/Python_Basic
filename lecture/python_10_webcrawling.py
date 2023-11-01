@@ -86,7 +86,8 @@ for p in content_list:
     content += p.get_text()
 print(f"본문: {content_list}")
 
-
+reg_data = doc.select("")
+print(f"날자: {reg_data}")
 
 
 
