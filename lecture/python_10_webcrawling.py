@@ -75,19 +75,25 @@ result = requests.get(url)
 doc = BeautifulSoup(result.text, "html.parser")
 
 # 3.원하는 정보 수집
+reg_data = doc.select("span.num_date")[0].get_text()
+print(f"날자: {reg_data}")
+
 title = doc.select("h3.tit_view")[0].get_text()
 # select() -> 결과: List Type
 print(title)
 # 경고: Tag 이름으로는 절대 수집 X
 content_list = doc.select("div.article_view p")
-
+# content_list = ["<p>본문1</p>","<p>본문2</p>","<p>본문3</p>","<p>본문4</p>"]
 content = ""
-for p in content_list:
-    content += p.get_text()
-print(f"본문: {content_list}")
+#   ex) p = ",<p>본문</p>"
+for p in content_list:      #       content = content + p.get_text()
+    content += p.get_text() # 반복1: content = "" + "본문1"
+print(f"본문: {content_list}")# 반복2: content = "본문1" + "본문2"
+                             # 반복3: content = "본문1본문2" + "본문3"
 
-reg_data = doc.select("")
-print(f"날자: {reg_data}")
+
+
+
 
 
 
