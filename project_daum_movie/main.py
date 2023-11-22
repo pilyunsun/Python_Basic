@@ -98,6 +98,4 @@ for item in review_list:
         review_date = review_date.strftime("%Y. %m. %d. %H:%M")
     print(f"-날짜: {review_date}")
 
-
-
 driver.close()
