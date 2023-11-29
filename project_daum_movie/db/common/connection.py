@@ -30,6 +30,8 @@
 #       ㄴ tbl_review(Table)
 
 import pymysql
+import connection
+
 
 def connection():
     try:
